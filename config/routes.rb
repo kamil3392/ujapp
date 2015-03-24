@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :models
   #get 'welcome/index'
   resources :articles
   # The priority is based upon order of creation: first created -> highest priority.
