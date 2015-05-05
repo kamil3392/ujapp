@@ -11,7 +11,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 
-gem 'simplecov'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -53,5 +52,12 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
+  gem 'simplecov', :require => false
+  gem "capybara-webkit", ">= 1.2.0"
+  gem 'selenium-webdriver'
+end
+
+group :test do
+  gem 'database_cleaner'
 end
 
